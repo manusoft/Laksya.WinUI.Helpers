@@ -6,7 +6,7 @@ namespace Laksya.WinUI.Helpers;
 public class DateTimeToDateTimeOffsetConverter : IValueConverter
 {
     // Convert DateTime to DateTimeOffset
-    public object? Convert(object value, Type targetType, object parameter, string language)
+    public object Convert(object value, Type targetType, object parameter, string language)
     {
         if (value is null) return null;
 
@@ -16,7 +16,7 @@ public class DateTimeToDateTimeOffsetConverter : IValueConverter
     }
 
     // Convert DateTimeOffset to DateTime
-    public object? ConvertBack(object value, Type targetType, object parameter, string language)
+    public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
         if (value is null) return null;
 
